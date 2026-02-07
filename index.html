@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>EduCenter | Zamonaviy O‘quv Markaz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">EduCenter</div>
+    <nav>
+      <a href="#home">Bosh sahifa</a>
+      <a href="#courses">Kurslar</a>
+      <a href="#about">Biz haqimizda</a>
+      <a href="#teachers">O‘qituvchilar</a>
+      <a href="#contact">Aloqa</a>
+    </nav>
+    
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>Kelajak kasblarini biz bilan o‘rganing</h1>
+      <p>IT, Dasturlash, Dizayn va Sun’iy Intellekt kurslari</p>
+      <div class="hero-buttons">
+        <button class="main-btn">Kurslarni ko‘rish</button>
+        <button class="outline-btn">Ro‘yxatdan o‘tish</button>
+       
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="./images/photo_2026-01-02_19-55-21 (2).jpg" alt="education">
+    </div>
+  </section>
+
+  <!-- COURSES -->
+  <section class="courses" id="courses">
+    <h2>Kurslarimiz</h2>
+
+    <div class="course-grid">
+      <div class="course-card">
+        <h3>Frontend</h3>
+        <p>HTML, CSS, JS, React</p>
+        <button>Batafsil</button>
+      </div>
+
+      <div class="course-card">
+        <h3>Backend</h3>
+        <p>Node.js, API, Database</p>
+        <button>Batafsil</button>
+      </div>
+
+      <div class="course-card">
+        <h3>AI / Python</h3>
+        <p>Sun’iy intellekt va ML</p>
+        <button>Batafsil</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <h2>Biz haqimizda</h2>
+    <p>
+      EduCenter — zamonaviy bilimlar markazi. Biz yoshlarni real kasblarga tayyorlaymiz.EduCenter-da siz nafaqat nazariy bilim olasiz, balki amaliy mashg‘ulotlar, interaktiv loyihalar va mentorlar yordami orqali o‘z ko‘nikmalaringizni mustahkamlaysiz. Biz bilan siz o‘zingizga ishonch hosil qilasiz, kelajagingizni mustahkam poydevor bilan qurishga tayyor bo‘lasiz.
+      <br>
+      Bizda ilm o'rganing va o'z kelajakingizni quring
+    </p>
+  </section>
+    
+  <!-- CONTACT -->
+  <!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <h2>Bog‘lanish</h2>
+
+  <div class="contact-box">
+
+    <div class="contact-item">
+      <a href="https://t.me/Aziz_Ravshanoff" target="_blank">
+        <div class="icon-circle telegram">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
+        </div>
+        <p>Telegram</p>
+      </a>
+    </div>
+
+    <div class="contact-item">
+      <a href="https://instagram.com/azik_life_ff" target="_blank">
+        <div class="icon-circle instagram">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+        </div>
+        <p>instagram</p>
+      </a>
+    </div>
+
+    <div class="contact-item">
+      <a href="https://wa.me/998931561332" target="_blank">
+        <div class="icon-circle whatsapp">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+        </div>
+        <p>Whatsapp</p>
+      </a>
+    </div>
+
+  </div>
+  <section class="teachers" id="teachers">
+  <h2>O‘qituvchilarimiz</h2>
+
+  <div class="teacher-grid">
+    <div class="teacher-card">
+      <img src="./images/photo_2026-01-02_19-55-21 (2).jpg">
+      <h3>Azizjon Ravshanov</h3>
+      <p>Frontend Developer</p>
+    </div>
+
+    <div class="teacher-card">
+      <img src="./images/beautiful-girl-stands-park_8353-5084.avif">
+      <h3>Madina Aliyeva</h3>
+      <p>Backend Developer</p>
+    </div>
+
+    <div class="teacher-card">
+      <img src="./images/tm-men1_0001_TM-MEN3.jpg">
+      <h3>Jasur Xolmatov</h3>
+      <p>AI Engineer</p>
+    </div>
+  </div>
+  
+</section>
+
+
+  <!-- ARIZA QOLDIRISH FORM (Zamonaviy) -->
+<section class="application-section" id="application">
+  <div class="application-form" id="application-form">
+    <h3>Ariza qoldirish</h3>
+    <p>Biz bilan bog‘lanib, kursga ro‘yxatdan o‘ting</p>
+    <form onsubmit="submitApplication(event)">
+      <div class="input-group">
+        <input type="text" id="name" placeholder="Ismingiz" required>
+        <label for="name">Ismingiz</label>
+      </div>
+      <div class="input-group">
+        <input type="tel" id="phone" placeholder="Telefon raqamingiz" required>
+        <label for="phone">Telefon raqamingiz</label>
+      </div>
+      <button type="submit">Yuborish</button>
+      <p class="app-msg"></p>
+    </form>
+  </div>
+</section>
+
+  </div>
+</section>
+
+</section>
+
+
+<script src="index.js"></script>
+
+
+</body>
+</html>

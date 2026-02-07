@@ -1,0 +1,828 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+  background:#0f172a;
+  color:white;
+}
+
+/* NAVBAR */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 60px;
+  background:#020617;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.navbar .logo{
+  font-size:24px;
+  font-weight:bold;
+  color:#38bdf8;
+}
+
+.navbar nav a{
+  margin:0 15px;
+  text-decoration:none;
+  color:white;
+  font-size:16px;
+}
+
+.login-btn{
+  padding:8px 18px;
+  background:#38bdf8;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+/* HERO */
+.hero{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:80px 60px;
+}
+
+.hero-text{
+  max-width:50%;
+}
+
+.hero-text h1{
+  font-size:48px;
+}
+
+.hero-text p{
+  margin:20px 0;
+  font-size:18px;
+  color:#cbd5e1;
+}
+
+.hero-buttons button{
+  padding:12px 25px;
+  margin-right:10px;
+  border-radius:8px;
+  border:none;
+  cursor:pointer;
+}
+
+.main-btn{
+  background:#38bdf8;
+  color:black;
+}
+
+.outline-btn{
+  background:transparent;
+  border:1px solid #38bdf8;
+  color:#38bdf8;
+}
+
+/* COURSES */
+.courses{
+  padding:80px 60px;
+}
+
+.courses h2{
+  text-align:center;
+  font-size:36px;
+  margin-bottom:40px;
+}
+
+.course-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+.course-card{
+  background:#020617;
+  padding:30px;
+  border-radius:15px;
+  transition:0.3s;
+}
+
+.course-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 0 20px rgba(56,189,248,0.3);
+}
+
+.course-card button{
+  margin-top:15px;
+  padding:10px 20px;
+  background:#38bdf8;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+/* ABOUT */
+.about{
+  padding:80px 60px;
+  text-align:center;
+}
+
+/* CONTACT */
+.contact{
+  padding:80px 60px;
+  background:#020617;
+}
+
+.contact form{
+  max-width:400px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+}
+
+.contact input,
+.contact textarea{
+  margin:10px 0;
+  padding:12px;
+  border-radius:6px;
+  border:none;
+}
+
+.contact button{
+  padding:12px;
+  background:#38bdf8;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+}
+/* TEACHERS */
+.teachers{
+  padding:80px 60px;
+  text-align:center;
+}
+
+.teachers h2{
+  font-size:36px;
+  margin-bottom:40px;
+}
+
+.teacher-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+.teacher-card{
+  background:#020617;
+  padding:30px;
+  border-radius:15px;
+  transition:0.3s;
+}
+
+.teacher-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 0 20px rgba(56,189,248,0.3);
+}
+
+.teacher-card img{
+  width:100px;
+  margin-bottom:15px;
+}
+
+.teacher-card h3{
+  margin:10px 0 5px;
+}
+
+.teacher-card p{
+  color:#94a3b8;
+}
+/* AUTH PAGES */
+.auth-body{
+  min-height:100vh;
+  background:linear-gradient(120deg,#020617,#0f172a);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.auth-box{
+  background:#020617;
+  padding:40px;
+  border-radius:15px;
+  width:350px;
+  text-align:center;
+  box-shadow:0 0 30px rgba(56,189,248,0.2);
+}
+
+.auth-box h2{
+  margin-bottom:20px;
+}
+
+.auth-box form{
+  display:flex;
+  flex-direction:column;
+}
+
+.auth-box input{
+  margin:10px 0;
+  padding:12px;
+  border-radius:6px;
+  border:none;
+}
+
+.auth-box button{
+  margin-top:15px;
+  padding:12px;
+  background:#38bdf8;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+.auth-box a{
+  color:#38bdf8;
+  text-decoration:none;
+}
+.teacher-card{
+  border-radius: 18px;
+}
+/* CONTACT SOCIAL */
+.contact-wrapper{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
+}
+
+.contact-form{
+  display:flex;
+  flex-direction:column;
+}
+
+.contact-social{
+  background:#020617;
+  padding:30px;
+  border-radius:15px;
+}
+
+.contact-social h3{
+  margin-bottom:20px;
+  text-align:center;
+}
+
+.social{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  padding:12px 15px;
+  margin-bottom:12px;
+  border-radius:10px;
+  text-decoration:none;
+  color:white;
+  transition:0.3s;
+}
+
+.social img{
+  width:28px;
+}
+
+.social span{
+  font-size:16px;
+  font-weight:500;
+}
+
+/* COLORS */
+.telegram:hover{
+  background:#229ED9;
+}
+
+.instagram:hover{
+  background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af,#515bd4);
+}
+
+.whatsapp:hover{
+  background:#25D366;
+}
+/* CONTACT SECTION */
+.contact-section{
+  padding:80px 0;
+  text-align:center;
+  background:#0a0f1c;
+  color:white;
+}
+
+.contact-section h2{
+  font-size:36px;
+  margin-bottom:40px;
+}
+
+.contact-box{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:40px;
+  flex-wrap:wrap;
+}
+
+.contact-item{
+  text-align:center;
+}
+
+.contact-item a{
+  text-decoration:none;
+  color:white;
+}
+
+.icon-circle{
+  background:#081027;
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:auto;
+  transition:0.3s;
+  box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+.icon-circle img{
+  width:40px;
+}
+
+/* COLORS */
+.telegram:hover .icon-circle{
+  background:#229ED9;
+  transform:translateY(-10px);
+}
+
+.instagram:hover .icon-circle{
+  background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af,#515bd4);
+  transform:translateY(-10px);
+}
+
+.whatsapp:hover .icon-circle{
+  background:#25D366;
+  transform:translateY(-10px);
+}
+
+.contact-item p{
+  margin-top:10px;
+  font-size:18px;
+  font-weight:500;
+}
+/* =========================
+   APPLICATION FORM
+========================= */
+.application-form {
+  background: #020617;
+  padding: 50px 40px;
+  border-radius: 25px;
+  box-shadow: 0 20px 50px rgba(56, 189, 248, 0.3);
+  max-width: 500px;
+  width: 100%;
+  margin: 50px auto;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.application-form h3 {
+  font-size: 30px;
+  color: #38bdf8;
+  margin-bottom: 20px;
+}
+
+.application-form p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #ffffffaa;
+}
+
+/* INPUT GROUP */
+.application-form .input-group {
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.application-form .input-group input {
+  width: 100%;
+  padding: 20px 18px;       /* katta padding */
+  border-radius: 15px;      /* yumaloqroq */
+  border: 2px solid #38bdf8;
+  background: transparent;
+  color: white;
+  font-size: 18px;          /* katta shrift */
+  outline: none;
+}
+
+.application-form .input-group input::placeholder {
+  color: transparent;       /* floating label ishlashi uchun */
+}
+
+.application-form .input-group label {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  color: #ffffffaa;
+  font-size: 18px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+
+/* FOCUS / FLOATING LABEL */
+.application-form .input-group input:focus + label,
+.application-form .input-group input:not(:placeholder-shown) + label {
+  top: -12px;
+  left: 14px;
+  font-size: 13px;
+  color: #38bdf8;
+  background: #020617;
+  padding: 0 6px;
+}
+
+/* BUTTON */
+.application-form button {
+  width: 50%;
+  padding: 20px;
+  border: none;
+  border-radius: 15px;
+  background: #38bdf8;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.application-form button:hover {
+  background: #22c1f3;
+}
+
+/* MESSAGE */
+.application-form .app-msg {
+  margin-top: 15px;
+  font-size: 15px;
+  color: #38bdf8;
+  min-height: 22px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 1024px) {
+  .application-form {
+    padding: 40px 25px;
+  }
+  .application-form h3 { font-size: 26px; }
+  .application-form p { font-size: 15px; }
+  .application-form .input-group input { font-size: 17px; padding: 18px 14px; }
+  .application-form button { font-size: 17px; padding: 18px; }
+}
+
+@media (max-width: 768px) {
+  .application-form {
+    padding: 35px 20px;
+    margin: 40px 10px;
+  }
+  .application-form h3 { font-size: 22px; }
+  .application-form p { font-size: 14px; }
+  .application-form .input-group input { font-size: 16px; padding: 16px 12px; }
+  .application-form button { font-size: 16px; padding: 16px; }
+}
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+  line-height: 1.6;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background: #020617;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo { font-size: 1.8rem; color: #38bdf8; font-weight: bold; }
+
+.navbar nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.navbar nav a:hover { color: #38bdf8; }
+
+/* Burger menu for mobile */
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.burger span {
+  height: 3px;
+  width: 25px;
+  background: #38bdf8;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 5%;
+}
+
+.hero-text { flex: 1 1 500px; max-width: 600px; }
+.hero-text h1 { font-size: 2.8rem; margin-bottom: 20px; }
+.hero-text p { font-size: 1.2rem; color: #cbd5e1; margin-bottom: 20px; }
+
+.hero-buttons button {
+  padding: 12px 25px;
+  margin-right: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.main-btn { background: #38bdf8; color: black; }
+.main-btn:hover { background: #22c1f3; }
+
+.outline-btn {
+  background: transparent;
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+}
+.outline-btn:hover { background: #38bdf8; color: black; }
+
+/* =========================
+   COURSES
+========================= */
+.courses, .about, .teachers, .contact-section {
+  padding: 80px 5%;
+}
+
+.course-grid, .teacher-grid, .contact-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+/* COURSE & TEACHER CARDS */
+.course-card, .teacher-card {
+  background: #020617;
+  padding: 30px;
+  border-radius: 15px;
+  transition: 0.3s;
+  text-align: center;
+}
+.course-card:hover, .teacher-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(56,189,248,0.3);
+}
+
+/* TEACHER IMAGE */
+.teacher-card img { width: 100px; margin-bottom: 15px; border-radius: 50%; }
+
+/* TEACHER TEXT */
+.teacher-card h3 { margin: 10px 0 5px; font-size: 1.2rem; }
+.teacher-card p { color: #94a3b8; }
+
+/* =========================
+   CONTACT
+========================= */
+.contact-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.contact-item {
+  text-align: center;
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: white;
+}
+
+.icon-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #081027;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  transition: 0.3s;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.icon-circle img { width: 40px; }
+
+.telegram:hover { background: #229ED9; transform: translateY(-10px); }
+.instagram:hover { background: linear-gradient(45deg,#f58529,#dd2a7b,#8134af,#515bd4); transform: translateY(-10px); }
+.whatsapp:hover { background: #25D366; transform: translateY(-10px); }
+
+.contact-item p {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* =========================
+   APPLICATION FORM
+========================= */
+.application-form {
+  max-width: 500px;
+  width: 100%;
+  background: #020617;
+  padding: 50px 40px;
+  margin: 50px auto;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 25px 60px rgba(56,189,248,0.3);
+  transition: 0.3s;
+}
+
+.application-form h3 { font-size: 30px; color: #38bdf8; margin-bottom: 15px; }
+.application-form p { font-size: 16px; color: #ffffffaa; margin-bottom: 30px; }
+
+.application-form .input-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.application-form .input-group input {
+  width: 100%;
+  padding: 18px 16px;
+  font-size: 18px;
+  border-radius: 12px;
+  border: 2px solid #38bdf8;
+  background: transparent;
+  color: white;
+}
+
+.application-form .input-group input::placeholder { color: transparent; }
+.application-form .input-group label {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #ffffffaa;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.application-form .input-group input:focus + label,
+.application-form .input-group input:not(:placeholder-shown) + label {
+  top: -12px;
+  left: 12px;
+  font-size: 13px;
+  color: #38bdf8;
+  background: #020617;
+  padding: 0 6px;
+}
+
+.application-form button {
+  width: 100%;
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 15px;
+  border: none;
+  background: #38bdf8;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.application-form button:hover { background: #22c1f3; }
+
+.application-form .app-msg { margin-top: 15px; font-size: 15px; color: #38bdf8; min-height: 22px; }
+
+/* =========================
+   MEDIA QUERIES
+========================= */
+@media (max-width: 1024px) {
+  .hero-text h1 { font-size: 2.4rem; }
+  .hero-text p { font-size: 1.1rem; }
+  .application-form { padding: 45px 25px; }
+  .application-form h3 { font-size: 26px; }
+}
+
+@media (max-width: 768px) {
+  .navbar nav { display: none; }
+  .burger { display: flex; }
+  .hero { flex-direction: column; text-align: center; padding: 60px 5%; }
+  .hero-text h1 { font-size: 2rem; }
+  .hero-text p { font-size: 1rem; }
+
+  .course-grid, .teacher-grid, .contact-box { grid-template-columns: 1fr; gap: 20px; }
+  .application-form { padding: 35px 20px; }
+  .application-form h3 { font-size: 22px; }
+  .application-form p { font-size: 14px; }
+  .application-form .input-group input { font-size: 16px; padding: 16px 12px; }
+  .application-form button { font-size: 16px; padding: 16px; }
+}
+/* HERO SECTION RESPONSIVE */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 5%;
+}
+
+.hero-text {
+  flex: 1 1 400px;   /* minimal width 400px */
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+}
+
+/* Hero image wrapper */
+.hero-img {
+  flex: 1 1 300px;   /* minimal width 300px */
+  max-width: 400px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hero-img img {
+  width: 100%;       /* width 100% wrapperga moslashadi */
+  height: auto;      /* aspect ratio saqlanadi */
+  max-width: 400px;  /* kerak bo’lsa maksimal o’lcham */
+}
+@media (max-width: 768px) {
+  .navbar nav { display: none; }  /* NAVBAR linklari yo'qoladi */
+  .burger { display: flex; }      /* Burger menu paydo bo'ladi */
+}
+
+.modal {
+  display: none; /* Hide by default */
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #020617;
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 25px;
+  cursor: pointer;
+  color: #38bdf8;
+}

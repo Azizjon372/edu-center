@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>Register | EduCenter</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body class="auth-body">
+
+<div class="auth-box">
+  <h2>Ro‘yxatdan o‘tish</h2>
+ <form onsubmit="login(event)">
+  <input type="email" placeholder="Email">
+  <input type="password" placeholder="Parol">
+  <button>Kirish</button>
+</form>
+
+<script>
+function login(e){
+  e.preventDefault(); // form submitni to‘xtatadi
+  window.location.href = "dashboard.html"; // redirect
+}
+</script>
+
+
+</body>
+</html>
